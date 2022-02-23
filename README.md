@@ -11,6 +11,9 @@ This directory contains a Remix app with a deploy target of `Cloudflare Workers`
 
 `/cf-workers-picosanity` is the same app, but with [picosanity](https://github.com/rexxars/picosanity) swapped in for `@sanity/client`.
 
+### Fix for PicoSanity
+For some reason, Cloudflare isn't honoring the `browser` field in `package.json`. Can fix PicoSanity by deep importing from `picosanity/lib/browser`.
+
 If anyone knows of a possible fix, please let me know!
 
 
